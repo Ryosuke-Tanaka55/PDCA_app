@@ -3,7 +3,7 @@
     <h4 class="text-left">コメント</h4>
   </div>
   <ul>
-    <li id="comment_area">
+    <li id="comments_area">
       <%= render partial: 'comments/index', locals: { comments: @comments } if @comments.present? %>
     </li>
   </ul>
