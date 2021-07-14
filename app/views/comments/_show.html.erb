@@ -11,7 +11,7 @@
   <% if logged_in? %>
     <div class="comment-create">
       <h4 class="text-left">コメントを投稿する</h4>
-      <%= render partial: 'comments/form' %>
+      <%= render partial: 'comments/form', locals: { comment: @comment, post: @post } %>
     </div>
   <% end %>
 </div>
