@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
     else
       flash[:danger] = "コメント削除に失敗しました。"
     end
-      redirect_to user_post_url(@user.id, @post.id)
+    redirect_to user_post_url(@user.id, @post.id)
   end
 
   private
