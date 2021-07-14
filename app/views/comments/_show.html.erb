@@ -7,7 +7,6 @@
       <%= render partial: 'comments/index', locals: { comments: @comments } if @comments.present? %>
     </li>
   </ul>
-  <hr>
   <% if logged_in? %>
     <div class="comment-create">
       <h4 class="text-left">コメントを投稿する</h4>
