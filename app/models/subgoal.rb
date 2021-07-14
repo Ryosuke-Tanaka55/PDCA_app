@@ -44,8 +44,6 @@ class Subgoal < ApplicationRecord
   enum easy: { 楽: 0, 普通: 1, きつい: 2 }, _prefix: true
   # 進捗
   enum progress: { 未着手: 0, 作業中: 1, 完了: 2, 中止: 3 }, _prefix: true
-  # 最重要サブゴール
-  enum important: { 最重要: true, 通常: false }
 
   # 検索条件
   scope :search, -> (search_params) do  # scopeでsearchメソッドを定義。(search_params)は引数
