@@ -29,7 +29,7 @@ gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 # Use Uglifier as compressor for JavaScript assets
