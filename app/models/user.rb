@@ -21,7 +21,7 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_relationships, source: :follower
   has_many :posts, dependent: :destroy
   has_many :likes, dependent: :destroy
-  has_many :comments, dependent: :destroy
+  has_many :comments, through: :posts, dependent: :destroy
 
   # スケジュール
   has_many :events, dependent: :destroy
