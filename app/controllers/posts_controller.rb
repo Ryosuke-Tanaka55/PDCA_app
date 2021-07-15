@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @user = @post.user
     @comment = Comment.new
     #新着順で表示
-    #@comments = @post.comments.order(created_at: :desc)
+    @comments = @post.comments.order(created_at: :desc)
   end
 
   # ユーザー自身の投稿
