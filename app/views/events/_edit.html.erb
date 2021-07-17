@@ -7,7 +7,7 @@
               <h4 class="modal-title">スケジュール編集</h4>
           </div>
           <div class="modal-body">
-            <div  class="col">
+            <div class="col">
               <%= form_with(model: event, url: user_event_path(user_id: current_user.id, id: event.id), local: true) do |f| %>
                 <p>
                   <span>ToDo</span>

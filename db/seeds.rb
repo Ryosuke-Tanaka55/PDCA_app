@@ -67,21 +67,66 @@ User.create!(name: "宮城 大弥",
   password_confirmation: "password",
   agreement: true)
   
-10.times do |n|
-name  = Faker::Name.name
-email = "sample-#{n+1}@email.com"
-password = "password"
-User.create!(name: name,
-    email: email,
-    password: password,
-    password_confirmation: password,
+  User.create!(name: "山崎 福也",
+    email: "yamazaki@email.com",
+    password: "password",
+    password_confirmation: "password",
     agreement: true)
+
+  User.create!(name: "増井 浩俊",
+    email: "masui@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+
+  User.create!(name: "平野 佳寿",
+    email: "hirano@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+
+  User.create!(name: "山本 由伸",
+    email: "yamamoto@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+  
+  User.create!(name: "山岡 泰輔",
+    email: "yamaoka@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+  
+  User.create!(name: "能見 篤史",
+    email: "nohmi@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+  
+  User.create!(name: "田嶋 大樹",
+    email: "tajima@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)椋
+  
+  User.create!(name: "太田 椋",
+    email: "ohta@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+  
+  User.create!(name: "後藤 駿太",
+    email: "shunta@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+
 end
 
 # 以下のリレーションシップを作成する
 users = User.all
 user  = users.second
-following = users[3..50]
-followers = users[4..40]
+following = users[3..15]
+followers = users[4..15]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
