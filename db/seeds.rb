@@ -121,7 +121,25 @@ User.create!(name: "宮城 大弥",
     password_confirmation: "password",
     agreement: true)
 
-end
+  User.create!(name: "西野 真弘",
+    email: "nishino@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+
+  User.create!(name: "中川 圭太",
+    email: "nakagawa@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+
+  User.create!(name: "アダム・ジョーンズ",
+    email: "jones@email.com",
+    password: "password",
+    password_confirmation: "password",
+    agreement: true)
+  
+  end
 
 # 以下のリレーションシップを作成する
 users = User.all
