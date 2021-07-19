@@ -33,7 +33,7 @@ class Goal < ApplicationRecord
   end
 
   # カテゴリー
-  enum category: { 勉強: 0, 資格: 1, 語学: 2, 運動: 3, ダイエット: 4, 筋トレ: 5, 趣味: 6, 貯金: 7, 起業: 8, 旅行: 9, その他: 10 }, _prefix: true
+  enum category: { 仕事: 0, 起業: 1, 勉強: 2, 資格: 3, 語学: 4, 運動: 5, ダイエット: 6, 筋トレ: 7, 趣味: 8, 貯金: 9,  旅行: 10, その他: 11 }, _prefix: true
   # 進捗
   enum progress: { 未着手: 0, 作業中: 1, 完了: 2, 中止: 3 }, _prefix: true
 
