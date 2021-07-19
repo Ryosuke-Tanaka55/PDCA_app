@@ -1,6 +1,8 @@
 <!-- コメント内容(2件) ------------------------------------------------------------------>
 <%= comments.count %>件コメント
-<h5 class="more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">▼もっと見る....</h5>
+<% if comments.count > 2 %>
+  <h5 class="more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">▼もっと見る....</h5>
+<% end %>
 <% comments.first(2).each do |comment| %>
   <% unless comment.id.nil? %>
     <li class="comment-container">
