@@ -107,7 +107,7 @@ User.create!(name: "宮城 大弥",
     email: "tajima@email.com",
     password: "password",
     password_confirmation: "password",
-    agreement: true)椋
+    agreement: true)
   
   User.create!(name: "太田 椋",
     email: "ohta@email.com",
