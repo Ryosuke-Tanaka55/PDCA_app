@@ -138,8 +138,6 @@ User.create!(name: "宮城 大弥",
     password: "password",
     password_confirmation: "password",
     agreement: true)
-  
-  end
 
 # 以下のリレーションシップを作成する
 users = User.all
