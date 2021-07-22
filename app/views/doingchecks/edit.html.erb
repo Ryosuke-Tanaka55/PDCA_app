@@ -21,10 +21,10 @@
     <%= form_with(model: @doingcheck, url: user_goal_subgoal_doing_doingcheck_path(current_user, @goal, @subgoal, @doing), local: true) do |f| %>
       <%= render 'shared/object_error_messages', object: f.object %>
 
-      <%= f.label :achivement, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="supplement">※10%刻み</span>
+      <%= f.label :achivement, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>&nbsp;<span class="supplement">※10%刻み</span>
       <%= f.number_field :achivement, in: 0..100, step: 10, class: "form-control" %>
 
-      <%= f.label :check, class: "label-#{yield(:class_text)}" %>
+      <%= f.label :check, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>
       <%= f.text_area :check, class: "form-control" %>
       <div id="form-assist">
         ・実行できた、またはできなかった理由を掘り下げる<br>
@@ -32,7 +32,7 @@
         ・「なぜ？」を繰り返し課題を整理する
       </div>
 
-      <%= f.label :adjust, class: "label-#{yield(:class_text)}" %>
+      <%= f.label :adjust, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>
       <%= f.text_area :adjust, class: "form-control" %>
       <div id="form-assist">
         ・検証から調整を考える<br>
@@ -42,13 +42,13 @@
         ・調整の必要なし
       </div>
 
-      <%= f.label :check_at, class: "label-#{yield(:class_text)}" %>
+      <%= f.label :check_at, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>
       <%= f.datetime_field :check_at, class: "form-control datetime-form" %><br>
       
-      <%= f.label :estimate_check_at, class: "label-#{yield(:class_text)}" %>
+      <%= f.label :estimate_check_at, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>
       <%= f.datetime_field :estimate_check_at, class: "form-control datetime-form" %><br>
 
-      <%= f.label :span, class: "label-#{yield(:class_text)}" %>
+      <%= f.label :span, class: "label-#{yield(:class_text)}" %>&nbsp;<span class="badge badge-danger">必須</span>
       <%= f.text_field :span, class: "form-control" %>
       <div id="form-assist">
         ・検証の周期を登録

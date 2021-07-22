@@ -71,7 +71,7 @@ ja:
         finish_day: 終了日
         pattern: タイプ    
         priority: 優先度
-        impact: インパクト
+        impact: インパクト（効果）
         worktime: 工数（時間）
         easy: 手軽さ
         progress: 進捗
@@ -120,7 +120,7 @@ ja:
         adjust: Do調整
         pattern: タイプ
         priority: 優先度
-        impact: インパクト
+        impact: インパクト（効果）
         worktime: 工数（時間）
         easy: 気軽さ
         progress: 進捗

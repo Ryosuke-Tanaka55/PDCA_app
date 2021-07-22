@@ -6,6 +6,8 @@ class Event < ApplicationRecord
   validates :title, presence: true
   validates :start_time, presence: true
   validates :end_time, presence: true
+  validates :color, presence: true
+
   validate  :start_end_check
 
   enum color: { 緑色: 0, 青色: 1, 黄色: 2, 赤色: 3, 水色: 4, 桃色: 5, 灰色: 6 }

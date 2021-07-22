@@ -3,6 +3,7 @@ class Goalgap < ApplicationRecord
 
   # バリデーション
   validates :gap, presence: true, length: { minimum: 2 }
+  validates :detail, presence: true, length: { minimum: 2 }
   validates :solution, presence: true, length: { minimum: 2 }
   validates :impact, presence: true
   validates :worktime, presence: true

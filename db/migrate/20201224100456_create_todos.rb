@@ -2,7 +2,6 @@ class CreateTodos < ActiveRecord::Migration[6.0]
   def change
     create_table :todos do |t|
       t.string :todo, presence: true
-      t.date :worked_on, presence: true
       t.datetime :start_time, presence: true
       t.datetime :finish_time, presence: true
       t.string :estimated_time, presence: true

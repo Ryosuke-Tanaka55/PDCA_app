@@ -225,7 +225,6 @@ ActiveRecord::Schema.define(version: 2021_04_15_133241) do
 
   create_table "todos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "todo"
-    t.date "worked_on"
     t.datetime "start_time"
     t.datetime "finish_time"
     t.string "estimated_time"
